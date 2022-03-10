@@ -30,7 +30,7 @@ body{
     color: rgb(255,189,0);
     font-family: 'luckiest', Arial, Helvetica, sans-serif;
     font-size: 4rem;
-    margin: 15rem 2rem 1rem 2rem;
+    margin: 0 2rem 1rem 2rem;
     text-align: center;
     text-shadow: 2px 6px 0px white;
     -webkit-text-stroke: 1px black;
@@ -40,23 +40,9 @@ body{
     justify-content: center; 
 }
 .heading{
+    display: block;
     margin: 2rem auto;
-    position: absolute;
-    width: 50vh;
-}
-p.js-warning{
-    color: rgba(255,0,0,1);
-    display: flex;
-    font-family: 'luckiest', Arial, Helvetica, sans-serif;
-    font-size: 2rem;
-    justify-content: center;
-    -webkit-text-stroke: black 2px;
-}
-.inactive{
-    opacity: 0;
-}
-.active{
-    opacity: 1;
+    width: 20rem;
 }
 .animalButtons{
     background-color: rgb(255, 106, 2);
@@ -88,7 +74,7 @@ p.js-warning{
     display: flex;
     justify-content: center;
 }
-.dateInputField{
+.dateField{
     background-color: rgb(255, 106, 2);
     border: solid 5px black;
     border-radius: 1rem;
@@ -97,6 +83,9 @@ p.js-warning{
     font-size: 1.5rem;
     height: 3rem;
     padding: .5rem;
+}
+.dateField:active{
+    border: solid 5px white;
 }
 .enterButton{
     background-color: rgb(255, 106, 2);
@@ -109,6 +98,48 @@ p.js-warning{
     padding: 1rem;
     text-align: center;
 }
+.enterButton:hover{
+    border: solid 5px white;
+}
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    
+}
+.result{
+    background-color: rgb(255, 106, 2);
+    border: solid 5px black;
+    border-radius: 1rem;
+    color: rgb(102,31,0);
+    display: none;
+    font-family: 'londrina', 'Courier New', Courier, monospace;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    opacity: 0;
+    text-align: center;
+    max-width: 400px;
+}
+.resultAbility{
+    padding: 0 1rem;
+}
+.inactive{
+    display: none;
+    opacity: 0;
+}
+.active{
+    animation: fadeIn .1s ease-in-out forwards;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    opacity: 1;
+}
 .hide{
     display: none;
 }
@@ -118,6 +149,13 @@ p.js-warning{
 }
 .musicButton{
     display: block;
-    margin: 1rem;
     
+}
+@media screen and (max-width: 470px) {
+    .sapHeader{
+        font-size: 2rem;
+    }
+    .animalButtons{
+        padding: 1rem;
+    }
 }
