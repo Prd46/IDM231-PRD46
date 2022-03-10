@@ -5,7 +5,6 @@ enter.addEventListener('click', function (event){
     const inputField = document.querySelector('.js-classInput');
     const inputValue = inputField.value; 
     let birthday = new Date(inputField.value);
-    console.log(birthday);
     let month = birthday.getMonth() + 1; 
     let day = birthday.getDate() + 1; 
     let year = birthday.getFullYear(); 
@@ -16,7 +15,6 @@ enter.addEventListener('click', function (event){
     let thisYear = current.getFullYear(); 
 
     console.log(month, day, year, thisMonth, today, thisYear);
-    //console.log(month, day);
     const readout = document.querySelector('.js-outputText');
     const warning = document.querySelector('.js-warning');
     

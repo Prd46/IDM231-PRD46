@@ -39,9 +39,9 @@ body{
     display: flex;
     justify-content: center; 
 }
-.headimg{
+.heading{
     margin: 2rem auto;
-    position:absolute;
+    position: absolute;
     width: 50vh;
 }
 p.js-warning{
