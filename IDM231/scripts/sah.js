@@ -19,7 +19,6 @@ enter.addEventListener('click', function (event){
     //console.log(month, day);
     const readout = document.querySelector('.js-outputText');
     const warning = document.querySelector('.js-warning');
-    warning.innerHTML = "";
     
 
     if ((year >= thisYear ) && (month >= thisMonth) && (day >= today)){ 

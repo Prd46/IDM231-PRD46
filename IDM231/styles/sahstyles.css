@@ -27,7 +27,7 @@ body{
     text-align: center;
 }
 .sapHeader{
-    color: rgb(255, 208, 0);
+    color: rgb(255,189,0);
     font-family: 'luckiest', Arial, Helvetica, sans-serif;
     font-size: 4rem;
     margin: 15rem 2rem 1rem 2rem;
@@ -45,17 +45,28 @@ body{
     width: 50vh;
 }
 p.js-warning{
+    color: rgba(255,0,0,1);
+    display: flex;
     font-family: 'luckiest', Arial, Helvetica, sans-serif;
-    color: red;
+    font-size: 2rem;
+    justify-content: center;
+    -webkit-text-stroke: black 2px;
+}
+.inactive{
+    opacity: 0;
+}
+.active{
+    opacity: 1;
 }
 .animalButtons{
-    border: solid 2px white;
+    background-color: rgb(255, 106, 2);
+    border: solid 5px black;
     border-radius: 2rem;
     display: flex;
     justify-content: center;
     justify-items: center;
     flex-wrap: wrap;
-    margin: 2rem auto 0 auto;
+    margin: 1rem auto;
     max-width: 20rem;
     padding: 2rem;
 }
@@ -77,6 +88,27 @@ p.js-warning{
     display: flex;
     justify-content: center;
 }
+.dateInputField{
+    background-color: rgb(255, 106, 2);
+    border: solid 5px black;
+    border-radius: 1rem;
+    color: rgb(102,31,0);
+    font-family: 'luckiest', Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    height: 3rem;
+    padding: .5rem;
+}
+.enterButton{
+    background-color: rgb(255, 106, 2);
+    border: solid 5px black;
+    border-radius: 1rem;
+    color: rgb(102,31,0);
+    font-family: 'luckiest', Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    height: auto;
+    padding: 1rem;
+    text-align: center;
+}
 .hide{
     display: none;
 }
@@ -85,10 +117,7 @@ p.js-warning{
     width: auto;
 }
 .musicButton{
-    bottom: 0;
     display: block;
-    left: 0;
     margin: 1rem;
-    position: absolute;
     
 }
