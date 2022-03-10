@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitch counter</title>
+</head>
+<body>
+    <h1 class="counter">Counter</h1>
+    <h2 class="number">0</h2>
+    <h2 class="number1">1</h2>
+    <h2 class="number2">2</h2>
+    <button class="clickMinus">-</button>
+    <button class="clickPlus">+</button>
+
+    <script>
+        const counter = document.querySelector('.number');
+        const counter1 = document.querySelector('.number1');
+        const counter2 = document.querySelector('.number2');
+        const minus= document.querySelector('.clickMinus');
+        const plus= document.querySelector('.clickPlus');
+        let count = 0;
+        let count1 = 1;
+        let count2 = 2;
+
+        function increaseValue(){
+            count++;
+            count1++;
+            count2++;
+            counter.innerHTML = count;
+            counter1.innerHTML = count1;
+            counter2.innerHTML = count2;
+        }
+        function decreaseValue(){
+            count--;
+            count1--;
+            count2--;
+            counter.innerHTML = count;
+            counter1.innerHTML = count1;
+            counter2.innerHTML = count2;
+            if (count < 0){
+                count = 3;
+            }if (count1 < 0){
+                count1 = 3;
+            }
+            if (count2 < 0){
+                count2 = 3;
+            }
+            }
+        plus.addEventListener('click', increaseValue);
+        minus.addEventListener('click', decreaseValue);
+    </script>
+</body>
+</html>

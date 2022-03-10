@@ -1,0 +1,94 @@
+body{
+    background-attachment: fixed;
+    background-color: black;
+    background-image: url('../media/bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: static;
+}
+
+@font-face {
+    font-family: 'luckiest';
+    src: url('../fonts/luckiestguy-regular-webfont.woff2') format('woff2');
+    src: url('../fonts/luckiestguy-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'londrina';
+    src: url('../fonts/londrinasolid-light-webfont.woff2') format('woff2');
+    src: url('../fonts/londrinasolid-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.outputText{
+    font-family: 'londrina', 'Courier New', Courier, monospace;
+    text-align: center;
+}
+.sapHeader{
+    color: rgb(255, 208, 0);
+    font-family: 'luckiest', Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    margin: 15rem 2rem 1rem 2rem;
+    text-align: center;
+    text-shadow: 2px 6px 0px white;
+    -webkit-text-stroke: 1px black;
+}
+.logo{
+    display: flex;
+    justify-content: center; 
+}
+.headimg{
+    margin: 2rem auto;
+    position:absolute;
+    width: 50vh;
+}
+p.js-warning{
+    font-family: 'luckiest', Arial, Helvetica, sans-serif;
+    color: red;
+}
+.animalButtons{
+    border: solid 2px white;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    margin: 2rem auto 0 auto;
+    max-width: 20rem;
+    padding: 2rem;
+}
+.animalButton{
+    background-color: rgba(0,0,0,0);
+    border-radius: 1rem;
+    border-style: none;
+    height: 4rem;
+    width: 5rem;
+}
+.animalButton:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.form__animalBox{
+    display: flex;
+    justify-content: center;
+}
+.dateInput{
+    display: flex;
+    justify-content: center;
+}
+.hide{
+    display: none;
+}
+.clickableAnimal{
+    height: 4rem;
+    width: auto;
+}
+.musicButton{
+    bottom: 0;
+    display: block;
+    left: 0;
+    margin: 1rem;
+    position: absolute;
+    
+}

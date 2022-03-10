@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dark mode</title>
+</head>
+<body>
+    <h1>Dark Mode Example</h1>
+    <button class="js-darkMode">Dark Mode</button>
+    <style>
+    body{
+        background-color: white;
+        color: black;
+    }
+    .invert{
+        background-color: black;
+        color: white;
+    }
+    </style>
+    <script>
+        const darkButton = document.querySelector('button');
+        darkButton.addEventListener('click', function() {
+        const bodyElement = document.querySelector('body');
+        bodyElement.classList.toggle('invert');
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colorwave</title>
+</head>
+<body>
+    <div class="whole">
+    <button class="leftbutton">left</button>
+    <section class="colors">
+    <div class="colorblock" position="1" red ></div>
+    <div class="colorblock" position="2" orange></div>
+    <div class="colorblock" position="3" yellow></div>
+    <div class="colorblock" position="4" green></div>
+    <div class="colorblock" position="5" blue></div>
+    <div class="colorblock"  position="6" purple></div>
+    </section>
+    <button class="rightbutton">right</button>
+    </div>
+</body>
+<style>
+    .colors{
+        display: flex;
+    }
+    .whole{
+        display: flex;
+    }
+    .colorblock{
+        height: 2rem;
+        width: 2rem;
+    }
+    .colorblock[red]{
+        background-color: red;
+    }
+    .colorblock[orange]{
+        background-color: orange;
+    }
+    .colorblock[yellow]{
+        background-color: yellow;
+    }
+    .colorblock[green]{
+        background-color: green;
+    }
+    .colorblock[blue]{
+        background-color: blue;
+    }
+    .colorblock[purple]{
+        background-color: purple;
+    }
+    @keyframes rightanim{
+        from{
+            transform: translateX(0px);
+        }
+        to{
+            transform: translateX(32px);
+        }
+    }
+    .rightAnimation{
+        animation: rightanim 1s ease-in-out .5s forwards; 
+    }
+</style>
+<script>
+    const leftbutton = document.querySelector(".leftbutton");
+    const rightbutton = document.querySelector(".rightbutton");
+    const square = document.querySelector(".colorblock");
+    const squares = document.querySelectorAll(".colorblock");
+    console.log(squares);
+    rightbutton.addEventListener('click', function(){
+        for (const square of squares )
+        square.classList.add('rightAnimation');
+        setTimeout(function(){
+            square.classList.remove('rightAnimation');
+        }, 2000);
+    })
+</script>
+</html>

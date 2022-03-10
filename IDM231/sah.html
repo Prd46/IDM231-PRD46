@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Auto Horroscope</title>
+    <link rel="stylesheet" href="styles/sahstyles.css" />
+</head>
+<body>
+        <div class="logo">
+        <img src="logo.png" class="headimg" alt="super auto pets logo" />
+        </div>
+    <h1 class="sapHeader">Horroscope</h1>
+    <h2 class="outputText">Enter your birthday or select an animal below!</h2>
+    <form class="dateInput" action="/">
+        <label>
+        <input class="js-classInput" type="date" id="birthday" name="birthday">
+        <button class="js-enter enterButton">Enter</button>
+        <p class="js-warning"></p>
+    </label>
+    </form>
+    <div class="form__animalBox">
+        <img class="signAnimal badger hide" src="media/Super-Auto-Pets-Badger-Tiers.png" />
+        <img class="signAnimal blowfish hide" src="media/Super-Auto-Pets-Blowfish-Tiers.png" />
+        <img class="signAnimal camel hide" src="media/Super-Auto-Pets-Camel-Tiers.png" />
+        <img class="signAnimal dog hide" src="media/Super-Auto-Pets-Dog-Levels.png" />
+        <img class="signAnimal giraffe hide" src="media/Super-Auto-Pets-Giraffe-Tiers.png" />
+        <img class="signAnimal kangaroo hide" src="media/Super-Auto-Pets-Kangaroo-Tiers.png" />
+        <img class="signAnimal ox hide" src="media/Super-Auto-Pets-Ox-Tiers.png" />
+        <img class="signAnimal rabbit hide" src="media/Super-Auto-Pets-Rabbit-Tiers.png" />
+        <img class="signAnimal sheep hide" src="media/Super-Auto-Pets-Sheep-Levels-2.png" />
+        <img class="signAnimal snail hide" src="media/Super-Auto-Pets-Snail-Levels-2.png" />
+        <img class="signAnimal squirrel hide" src="media/Super-Auto-Pets-Squirrel-Levels-2.png" />
+        <img class="signAnimal turtle hide" src="media/Super-Auto-Pets-Turtle-Levels-2.png" />
+    </div>
+    <div class="animalButtons">
+        <button class="animalButton"><img class="clickableAnimal badger" src="media/Super-Auto-Pets-Badger-Tiers.png" /></button>
+        <button class="animalButton"><img class="clickableAnimal blowfish" src="media/Super-Auto-Pets-Blowfish-Tiers.png" /></button>
+        <button class="animalButton"><img class="clickableAnimal camel" src="media/Super-Auto-Pets-Camel-Tiers.png" /></button>
+        <button class="animalButton"><img class="clickableAnimal dog" src="media/Super-Auto-Pets-Dog-Levels.png" /></button>
+        <button class="animalButton"><img class="clickableAnimal giraffe" src="media/Super-Auto-Pets-Giraffe-Tiers.png" /></button>
+        <button class="animalButton"><img class="clickableAnimal kangaroo" src="media/Super-Auto-Pets-Kangaroo-Tiers.png" /></button>
+        <button class="animalButton"><img class="clickableAnimal ox" src="media/Super-Auto-Pets-Ox-Tiers.png" /></button>
+        <button class="animalButton"><img class="clickableAnimal rabbit" src="media/Super-Auto-Pets-Rabbit-Tiers.png" /></button>
+        <button class="animalButton"><img class="clickableAnimal sheep" src="media/Super-Auto-Pets-Sheep-Levels-2.png" /></button>
+        <button class="animalButton"><img class="clickableAnimal snail" src="media/Super-Auto-Pets-Snail-Levels-2.png" /></button>
+        <button class="animalButton"><img class="clickableAnimal squirrel" src="media/Super-Auto-Pets-Squirrel-Levels-2.png" /></button>
+        <button class="animalButton"><img class="clickableAnimal turtle" src="media/Super-Auto-Pets-Turtle-Levels-2.png" /></button>
+    </div>
+    <audio class="musicButton" autoplay="autoplay" controls="controls">
+        <source src="media/superauto.mp3" />     
+    </audio>
+    <script src="scripts/sah.js"></script>
+</body>
+</html>

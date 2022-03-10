@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <form action="s">
+        <label for="billTotal">Bill Total</label>
+        <input id="billTotal" class="js-bill-total" value="0.00" type="number">
+        <br />
+        <label for="percentage">Percentage</label>
+        <input id="percentage" class="js-tip-percentage" value="15" type="number">
+        <button class="js-submit-button">Submit</button>
+    </form>
+    <div class="total-wrapper" style="display: none">
+    <h2>Your Total: $<span class="totalReadout">0.00</span></h2>
+    <p>You should tip $<span class="tipReadout">0.00</span></p>
+    <p>Grand total: $<span class="grandTotal">0.00</span></p>
+`   </div>
+
+    <script>
+        const submit = document.querySelector('.js-submit-button');
+
+    submit.addEventListener('click', function(event){
+        event.preventDefault();
+        const inputTotal = document.querySelector('.js-bill-total').value;
+        const inputPercentage = document.querySelector('.js-tip-percentage').value;
+        const tipAmount = (inputPercentage / 100) * inputTotal;
+        const formattedTipAmount = tipAmount.toFixed(2);
+        console.log(tipAmount.toFixed(2));
+        const totalReadout = document.querySelector('.totalReadout');
+        const tipReadout = document.querySelector('.tipReadout');
+        const grandReadout = document.querySelector('.grandTotal');
+        
+        const gTotal = parseInt(inputTotal) + tipAmount;
+        console.log(gTotal);
+        const formattedGTotal = gTotal.toFixed(2);
+        console.log(formattedGTotal);
+        totalReadout.innerHTML = inputTotal;
+        tipReadout.innerHTML = formattedTipAmount;
+        grandReadout.innerHTML = formattedGTotal;
+
+        const wrapper = document.querySelector('.total-wrapper');
+        wrapper.style.display = 'block';
+    })
+    </script>
+</body>
+</html>
