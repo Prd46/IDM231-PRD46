@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Super Auto Horroscope</title>
+    <title>Super Auto Pets Horroscope</title>
     <link rel="stylesheet" href="normalize">
     <link rel="stylesheet" href="styles/sahstyles.css" />
 </head>
 <body>
-    <button class="help">?</button>
+    <p class="inactive">Super auto pets horroscope</p>
+    <button class="help js-help">?</button>
+    <div class="js-helpBox helpBox inactive">
+        <button class="xButton js-helpXButton">X</button>
+        <h1>Welcome to the Super Auto Pets Horroscope!</h1>
+        <p>Enter your birthday to see which animal your astral sign most resonates with, from the game Super Auto Pets. You can also click from the list of buttons to view each animal individually.</p>
+    </div>
         <div class="logo">
         <img src="media/logo.png" class="heading" alt="super auto pets logo" />
         </div>
@@ -22,14 +28,14 @@
     </label>
     </form>
         <div class="result js-result">
-            <button class="xButton">X</button>
+            <button class="xButton js-mainX">X</button>
             <div class="resultImage js-resultImage">
-            <img class="resultAnimal" src="media/Super-Auto-Pets-Snail-Levels-2.png">
+            <img class="resultAnimal" src="media/Super-Auto-Pets-Turtle-Levels-2.png">
             </div>
             <div class="resultText js-resultText">
-                <h1 class="resultAnimal">Snail</h1>
-                <h2 class="resultStats">2 Attack / 2 Health</h2>
-                <p class="resultAbility">If you lost the last battle, buy it to give the rest of your team +1, 2, or 3 attack and health, depending on its level.</p>
+                <h1 class="resultAnimal">Badger</h1>
+                <h2 class="resultStats">5 Attack / 4 Health</h2>
+                <p class="resultAbility">When it faints, it deals its attack damage to adjacent pets, multiplied by 2 and 3 as it levels up</p>
             </div>
     </div>
     <div class="animalButtons">
@@ -46,8 +52,9 @@
         <button class="animalButton squirrel"><img class="clickableAnimal" src="media/Super-Auto-Pets-Squirrel-Levels-2.png" /></button>
         <button class="animalButton turtle"><img class="clickableAnimal" src="media/Super-Auto-Pets-Turtle-Levels-2.png" /></button>
     </div>
+    <p class="audioLabel">(play theme)</p>
     <audio class="musicButton" autoplay="autoplay" controls="controls">
-        <source src="media/superauto.mp3" />     
+        <source src="media/superauto.mp3" />
     </audio>
     <audio id="turtleSound">
         <source src="media/sounds/Turtle.mp3" />    

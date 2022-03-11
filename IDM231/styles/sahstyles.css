@@ -26,6 +26,52 @@ body{
     font-family: 'londrina', 'Courier New', Courier, monospace;
     text-align: center;
 }
+.help{
+    background-color: rgb(255, 106, 2);
+    border: solid 5px black;
+    border-radius: 1rem;
+    bottom: 100;
+    color: rgb(102,31,0);
+    font-family: 'luckiest', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    height: 3rem;
+    margin: 1rem;
+    position: fixed;
+    right: 100;
+    text-align: center;
+    width: 3rem;
+    z-index: 49;
+}
+.help:active{
+    border: solid 5px white;
+}
+.helpBox{
+    background-color: rgb(255, 106, 2);
+    border: solid 5px black;
+    border-radius: 1rem;
+    color: rgb(102,31,0);
+    flex-direction: column;
+    font-family: 'londrina', 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+    position: fixed;
+    text-align: center;
+    z-index: 50;
+}
+.xButton{
+    display: flex;
+    background-color: rgb(255, 106, 2);
+    border: solid 5px black;
+    border-radius: 1rem;
+    color: rgb(102,31,0);
+    font-family: 'luckiest', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    height: 2rem;
+    text-align: center;
+    width: 2rem;
+    z-index: 50;
+}
 .sapHeader{
     color: rgb(255,189,0);
     font-family: 'luckiest', Arial, Helvetica, sans-serif;
@@ -98,7 +144,7 @@ body{
     padding: 1rem;
     text-align: center;
 }
-.enterButton:hover{
+.enterButton:active{
     border: solid 5px white;
 }
 @keyframes fadeIn {
@@ -118,7 +164,7 @@ body{
     display: none;
     font-family: 'londrina', 'Courier New', Courier, monospace;
     flex-wrap: wrap;
-    margin: 0 auto;
+    margin: 1rem auto;
     opacity: 0;
     text-align: center;
     max-width: 400px;
@@ -150,6 +196,10 @@ body{
 .musicButton{
     display: block;
     
+}
+.audioLabel{
+    font-family: 'londrina', 'Courier New', Courier, monospace;
+    padding: 0 3rem;
 }
 @media screen and (max-width: 470px) {
     .sapHeader{
