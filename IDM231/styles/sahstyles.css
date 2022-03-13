@@ -22,6 +22,8 @@ body{
     font-weight: normal;
     font-style: normal;
 }
+
+/*Header elements*/
 .outputText{
     font-family: 'londrina', 'Courier New', Courier, monospace;
     text-align: center;
@@ -30,15 +32,15 @@ body{
     background-color: rgb(255, 106, 2);
     border: solid 5px black;
     border-radius: 1rem;
-    bottom: 100;
     color: rgb(102,31,0);
     font-family: 'luckiest', Arial, Helvetica, sans-serif;
     font-size: 1rem;
     height: 3rem;
+    left: 0;
     margin: 1rem;
     position: fixed;
-    right: 100;
     text-align: center;
+    top: 0;
     width: 3rem;
     z-index: 49;
 }
@@ -90,6 +92,8 @@ body{
     margin: 2rem auto;
     width: 20rem;
 }
+
+/*Animal option styles*/
 .animalButtons{
     background-color: rgb(255, 106, 2);
     border: solid 5px black;
@@ -112,6 +116,8 @@ body{
 .animalButton:hover{
     background-color: rgba(255, 255, 255, 0.5);
 }
+
+/*Form elements*/
 .form__animalBox{
     display: flex;
     justify-content: center;
@@ -156,6 +162,7 @@ body{
     }
     
 }
+/*Date input result*/
 .result{
     background-color: rgb(255, 106, 2);
     border: solid 5px black;
@@ -177,10 +184,10 @@ body{
     opacity: 0;
 }
 .active{
+    align-items: center;
     animation: fadeIn .1s ease-in-out forwards;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
     justify-items: center;
     justify-self: center;
@@ -189,6 +196,8 @@ body{
 .hide{
     display: none;
 }
+
+/*Bottom of screen*/
 .clickableAnimal{
     height: 4rem;
     width: auto;
@@ -201,6 +210,7 @@ body{
     font-family: 'londrina', 'Courier New', Courier, monospace;
     padding: 0 3rem;
 }
+/*Responsive adjustment. Works to as small as 320px*/
 @media screen and (max-width: 470px) {
     .sapHeader{
         font-size: 2rem;
